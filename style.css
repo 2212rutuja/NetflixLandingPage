@@ -1,0 +1,373 @@
+/**{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}*/
+
+body{
+    background-color:black;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.container {
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    height: 100%; /* 100% of viewport height */
+   
+}
+
+.container img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    opacity: 0.3;
+    
+}
+
+.container .logo{
+    position: absolute;
+    top: 10px; 
+    left: 10px; 
+    width: 150px; 
+    height: auto; 
+    margin-top: 15px;
+    margin-left: 170px;
+   opacity:1;
+    
+}
+
+.navbar{
+    position: absolute;
+    top: 15px; 
+    right: 150px; 
+    display: flex;
+}
+
+#languageSelector{
+    width: 100px; 
+    padding:5px;
+    height: auto; 
+    margin-top: 15px;
+    margin-right: 25px;
+    background-color: black;
+    color: white;
+    border-radius: 6px;
+}
+
+.signin-btn{
+    margin-top: 15px;
+    width: 40%;
+    padding:5px;
+    background-color: #e50914;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+
+.container .text{
+    position: absolute;
+      top: 45%; /* Center vertically */
+      left: 50%; /* Center horizontally */
+      transform: translate(-50%, -50%); /* Center the element exactly in the middle */
+      width: 80%; /* Adjust the width as needed */
+      height: auto;;
+      color: white;
+}
+
+h1{
+    font-size: 50px;
+    font-weight:600px;
+    line-height: 50px;
+}
+
+h3{
+    font-size: 25px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    line-height: 30px;
+}
+
+.email-form{
+    display: flex;
+    justify-content: center; 
+    margin-top: 25px !important;
+}
+
+
+.email-input {
+   
+    width: 30%;
+    padding: 20px;
+    border: none;
+   border-radius: 5px;
+    font-size: 16px;
+    color: white; /* Set text color to white */
+    background-color: rgba(209, 205, 223, 0.2); /* Set background color with transparency */
+  }
+
+  .email-input::placeholder {
+    color: rgb(219, 225, 227); /* Set placeholder color to white */
+  }
+
+  .get-started-btn {
+   
+    margin-left: 8px;
+    width: 20%;
+    padding:15px;
+    font-weight: 600;
+    background-color: #e50914;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 25px;
+    cursor: pointer;
+    
+  }
+
+
+  .wrapper {
+    width: 100%;
+    border-bottom: 6px solid #282727; /* Grey color border */
+    padding-bottom: auto; /* Add padding to separate content from the border */
+  }
+
+  .featuretext h1{
+    color: white;
+    font-size: 50px;
+    font-family:Arial, Helvetica, sans-serif;
+    
+  }
+
+  .feature p{
+    color: white;
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    line-height: 27px;
+    
+  }
+
+  .feature{
+    display: flex;
+      align-items: center; /* Center vertically */
+      justify-content: center; /* Center horizontally */ 
+     
+      margin:40px 120px; /* Add margin as needed */
+      
+  }
+
+  .featureimg {
+    width:100%; /* Adjust as needed */
+    height: auto;
+  }
+
+  
+  .faq{
+    color: white;
+  }
+
+  .faq h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .faq p{
+    width: 80%;
+    padding: 25px;
+    color: white;
+    background-color:#282727; 
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px auto;
+    position: relative;
+  }
+
+  .faq p i.fa-plus {
+    float: right;
+    margin-right: 15px;
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+  .faq h4{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+  }
+
+  .faq .email-form{
+    margin-bottom: 50px;
+  }
+
+  .footer{
+    align-items: center;
+    margin:40px 120px ;
+    font-size: 18px;
+   font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .footer p{
+    align-items: center;
+    color: rgb(224, 223, 223);;
+  }
+  
+
+  .footer li{
+    color: rgb(224, 223, 223);
+    list-style: none;
+    padding: 8px;
+    text-decoration: underline;
+    
+  }
+
+  .footer ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+    
+  }
+  
+
+  
+
+
+
+
+/* Making it Responsive */
+
+@media only screen and (max-width:1025px){
+    .navbar{
+        right: 2%;
+    }
+
+    .container img{
+        height: 100vh;
+    }
+
+    .container .logo{
+        margin-left: 10px;
+        margin-top: 15px;
+        width: 130px;
+    }
+
+    .container .text{
+        
+          top: 50%; /* Center vertically */
+          left: 50%; /* Center horizontally */
+          transform: translate(-50%, -50%); /* Center the element exactly in the middle */
+          width: 80%; /* Adjust the width as needed */
+          height: auto;;
+          color: white;
+    }
+    #languageSelector {
+        width: 80px;
+      }
+    
+      .signin-btn {
+        margin-top: 15px;
+        width: 40%;
+      }
+     
+      .email-input {
+        width: 100%;
+       font-size: 10px;
+      }
+    
+      .get-started-btn {
+        width: 100%;
+        font-size: 18px;
+        
+      }
+
+      .feature{
+        display: flex;
+        flex-direction: column;  
+        margin: 0;
+        padding: 0;        
+      }
+
+      .featureimg {
+        width:80%; /* Adjust as needed */
+        height:auto;
+      }
+
+      .featuretext h1{
+        color: white;
+        font-size: 35px;
+        font-family:Arial, Helvetica, sans-serif;
+        align-items: center;
+        text-align: center;
+        
+      }
+    
+      .feature p{
+        color: white;
+        font-size: 20px;
+        padding: 10px 20px;
+        font-family:Arial, Helvetica, sans-serif;
+        align-items: center;
+        text-align: center;
+        
+      }
+    
+     .alternative{
+      width: 80%;
+     }
+    
+      .faq h1{
+        font-size: 30px;
+      }
+
+      .faq p {
+        font-size: 16px;
+      }
+    
+      .faq p i.fa-plus {
+        font-size: 20px;
+      }
+    
+      .faq h4 {
+        font-size: 14px;
+      }
+
+      .faq .email-form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .faq .email-input{
+        width: 50%;
+        margin-bottom: 10px;
+      }
+
+      .faq .get-started-btn{
+        width: 30%;
+        
+      }
+    
+      .footer {
+        font-size: 14px;
+        margin: 0;
+        padding: 0;
+      }
+    
+      .footer ul {
+        display: grid;
+        grid-template-columns: repeat(2,1fr); /* Change to a single column for smaller screens */
+        
+      }
+
+
+
+}
