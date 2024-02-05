@@ -46,7 +46,7 @@ No prerequisites are needed for this project.
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/2212rutuja/NetflixLandingPage.git
+   git clone https://github.com/<username>/NetflixLandingPage.git
    cd NetflixLandingPage
 ### Usage
 Open the index.html file in a web browser to view the Netflix Landing Page.
